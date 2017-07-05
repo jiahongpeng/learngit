@@ -13,6 +13,9 @@ $ git status    //当前库的状态    modified是变动的文件
 
 $ git diff   //查看difference，有时候回车键之后会出现++++end，点击q退出记录
 
+$ commit的时候如果出现如图1的错误，则删除git文件夹里面的index.log文件
+
+
 
 
 
