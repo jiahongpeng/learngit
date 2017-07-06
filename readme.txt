@@ -84,6 +84,17 @@ git commit就是往master分支上提交更改。
 $ git diff HEAD -- readme.txt  //可以查看工作区和版本库里面最新版本的区别
 
 
+$ rm test.txt  //删除文件管理器的文件
+
+1.删除版本库中的文件
+$ git rm test.txt   
+$ git commit -m "fdfd"
+2.删错了，因为版本库里还有呢，所以可以很轻松地把误删的文件恢复到最新版本：
+$ git checkout -- test.txt
+3.如果版本库没有了，想撤回，只能回退到上一个版本。
+$ git reset --hard HEAD^
+
+
 git checkout -- readme.txt意思就是，把readme.txt文件在工作区的修改全部撤销
 命令中的 -- 很重要，没有--，就变成了“切换到另一个分支”的命令。
 
